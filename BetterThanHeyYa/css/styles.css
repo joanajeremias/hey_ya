@@ -1,0 +1,193 @@
+body {
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)); */
+  background-image: url('/resources/grid.jpg');
+  background-size: cover;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  bottom:0;
+  background: #837960 url('https://i.stack.imgur.com/MUsp6.jpg') 0 0 no-repeat;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgb(247, 244, 244) 70%);
+  /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(2, 2, 2, 0)),
+    color-stop(70%, grey)
+  );
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(5, 5, 5, 0) 0%,
+    rgb(255, 255, 255) 1000%
+  );
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#825B00', GradientType=0);
+  /* IE6-9 */
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.navbar{
+  display: flex;
+  width:20%
+}
+
+.container-fluid{
+  display: flex;
+  width: 100%;
+}
+
+#navbarNav {
+  justify-content: center;
+  width: 100%;
+}
+
+#mainDiv {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:fit-content;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#carouselExample {
+  width: 50%;
+  height: 50%;
+  border-radius: 5%;
+}
+
+.WebContainer{
+  width: 100%;
+  height: auto;
+}
+
+#page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-block{
+  border-radius: 4.5%;
+}
+
+#zeca {
+  width: 100%;
+  margin-top: 5%;
+  background-color: transparent;
+}
+
+.container-audio{
+  width: 50%;
+}
+
+.card {
+  width: calc(30% - 20px); /* 30% do tamanho do container com espaço entre */
+  min-width: 19rem; /* Largura mínima do cartão */
+  height: 20rem; /* Altura ajustável conforme o conteúdo */
+  perspective: 1000px;
+  background-color: #ef19b3;
+  color: white;
+  margin: 3%; /* Espaçamento entre os cartões */
+  position: relative;
+  cursor: pointer;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
+  text-align: center;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+#clap {
+  width: 20%;
+}
+
+.img-fluid{
+  width: 100%;
+  height: 100%;
+}
+
+.text-center {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav-link {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-center {
+  color: rgb(17, 255, 0);
+  text-shadow: 
+            -1px -1px 0 #ff00cc,  
+             1px -1px 0 #00d9ff,
+            -1px  1px 0 #ff00cc,
+             1px  1px 0 #00d9ff;
+} 

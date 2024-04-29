@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "BetterThanHeyYa",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5500
+	}
+}
